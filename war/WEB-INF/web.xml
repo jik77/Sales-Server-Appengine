@@ -7,6 +7,15 @@
 
   <!-- Servlets -->
   <servlet>
+        <servlet-name>javax.ws.rs.core.Application</servlet-name>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>javax.ws.rs.core.Application</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
+    
+<!--   <servlet>
     <servlet-name>greetServlet</servlet-name>
     <servlet-class>com.sales.server.server.GreetingServiceImpl</servlet-class>
   </servlet>
@@ -14,7 +23,7 @@
   <servlet-mapping>
     <servlet-name>greetServlet</servlet-name>
     <url-pattern>/salesserver/greet</url-pattern>
-  </servlet-mapping>
+  </servlet-mapping> -->
   
   <!-- Default page to serve -->
   <welcome-file-list>
